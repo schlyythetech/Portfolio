@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+    <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init("7NIWsEgrzSWn-NIAm"); 
+      })();
+    </script>   
+    <script src="script.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <h1>Portfolio</h1>
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="contact-btn">Contact Me</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-text">
+                <h2>Charles Schley Ebora</h2>
+                <p>A <strong>Canva Designer</strong> and <strong>2nd Year</strong></p>
+                <p><span>📍</span> San Ignacio, San Pablo City, Philippines</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn primary-btn">Contact Me</a>
+                    <a href="#" class="btn secondary-btn">More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/public/ako.jpeg.jpg" alt="Hero Image">
+            </div>
+        </header>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>Hi, I'm Charles!</h2>
+            <p>
+                My motto is "Behind every great man is a woman rolling her eyes."
+            </p>
+            <p>
+                "To secure an entry-level position in the IT field where I can utilize my skills in C# programming, UI
+design with Figma, database creation using XAMPP, and multimedia editing. I aim to contribute to
+innovative projects while continuously expanding my knowledge and technical expertise to support
+the organization's goals and advance my career in the tech industry."
+            </p>
+            <div class="about-buttons">
+                <a href="#" class="btn primary-btn">Download my CV/Resumé</a>
+                <a href="#projects" class="btn secondary-btn">See Projects</a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h1>SKILLS</h1>
+            <div class="skills-container">
+                <!-- Tools -->
+                <div class="skill-box">
+                    <h3>TOOLS</h3>
+                    <div class="skill-item">
+                        <img src="/public/canva.png" alt="Canva" width="50">
+                        <p>Canva</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" width="50">
+                        <p>Figma</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="/public/office.jpg" alt="Microsoft Office" width="50">
+                        <p>Microsoft Office</p>
+                    </div>
+                </div>
+        
+                <!-- Other Skills -->
+                <div class="skill-box">
+                    <h3>OTHER SKILLS</h3>
+                    <div class="skill-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2883/2883467.png" alt="Graphic Design" width="50">
+                        <p>Graphic Design</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2930/2930149.png" alt="Communication" width="50">
+                        <p>Communication</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4081/4081869.png" alt="Video Editing" width="50">
+                        <p>Video Editing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <form class="contact-form" id="contact-form">
+                    <input type="text" id="Name" placeholder="Your Name" required>
+                    <input type="email" id="Email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="button" onclick="sendMail()">Send</button>
+
+                </form>                
+            </div>
+        </section>
+    </div>
+       
+</body>
+</html>
